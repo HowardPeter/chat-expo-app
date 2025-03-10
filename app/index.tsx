@@ -1,9 +1,12 @@
-import { Text, View } from "react-native";
+import { View, Text } from 'react-native'
+import React from 'react'
+import { Slot } from 'expo-router'
+import "../global.css"
 
-export default function StartPage() {
+export default function _layout() {
   return (
-    <View className="bg-red-200 pt-10">
-      <Text className="text-3xl text-center">Home</Text>
+    <View>
+      <Slot />
     </View>
-  );
+  )
 }
